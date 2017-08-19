@@ -1,6 +1,6 @@
-# FSFSF - Fast Search for Similar Files in large collection of files
+# FSFSF - _Fast_ _Search_ _for_ _Similar_ _Files_ in large collection of files
 
-FSFSF search for similar files and similar parts of files in a large-scale collection of files.
+FSFSF searches for similar files and similar parts of files in a large-scale collection of files.
 
 Mining for [resemblance and containment of documents(Broder 1997)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.24.779&rep=rep1&type=pdf) has long been important since the days of AltaVista, even before Google was born; search engine giants are doing really well nowaday, but there is not a simple, succinct open source project to address this problem and provide a general purpose module.
 
@@ -14,7 +14,7 @@ FSFSF solves these problems and empowers you to discvoer similarity relations wi
 - Or more efficiently, reporting clusters of similar files,
 - Or, for a single file, seen or unseen before, find almost every file similar to it. This is lightning fast, like Google's search image by image.
 
-What's more, you can query for parts of files, without laborious effort to define and implement parsing of files into parts.
+What's more, you can query for parts of files, **without laborious effort to define and implement parsing of files into parts**. It is an important advantage for unstructured files that you don't know how to parse, for semi-structured file, and for embedded contents (for example, suspicious string in javascript which can later be evaluated and reflected into code).
 
 FSFSF is built on two ideas: Disjunction of Conjunction of Minhash (DC-Minhash) and File Fragment Clone Search (FFCS).
 
