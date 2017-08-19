@@ -18,7 +18,7 @@ What's more, you can query for parts of files, **without laborious effort to def
 
 FSFSF is built on two ideas: Disjunction of Conjunction of Minhash (DC-Minhash) and File Fragment Clone Search (FFCS).
 
-DC-Minhash provides a scalable, sort-and-groupby style clustering or pre-clustering algorithm. Sort-and-groupby approach is O(n log n) to the size of collection, and this is better then many clustering algorithms which requires all-pair distance, of O(n log n).
+DC-Minhash provides a **scalable, sort-and-groupby style clustering** or pre-clustering algorithm. Sort-and-groupby approach is O(n log n) to the size of collection, and this is **substantially faster then many clustering algorithms which requires O(n^2) all-pair distance**.
 
 The vanila version of MinHash is a locality sensitiity hashing that use hamming distance among fix-size MinHash of as an estimater of Jaccard distance among sets. You still need to compute the distances when use. The first work which use the sort-and-groupby approach on MinHash is described in Cohen et al. (2001).
 
