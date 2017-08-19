@@ -1,6 +1,6 @@
-# FSfSF - Fast Search for Similar Files
+# FSFSF - Fast Search for Similar Files in large collection of files
 
-FSfSF. High speed search for similar files and similar parts of files in a large-scale collection of files.
+FSFSF search for similar files and similar parts of files in a large-scale collection of files.
 
 Mining for [resemblance and containment of documents(Broder 1997)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.24.779&rep=rep1&type=pdf) has long been important since the days of AltaVista, even before Google was born; search engine giants are doing really well nowaday, but there is not a simple, succinct open source project to address this problem and provide a general purpose module.
 
@@ -8,7 +8,7 @@ When we talk about similarity of two files, we are talking about that the two se
 
 And more than often, we may notice that just one part of a file is very similar to some other file, or a portion of the other file. A paragraph in an article can be similar to another paragraph in some other article, even if the articles are just 30% similar. Or a code block can be a near-clone to another code block in some other source file -- then you know maybe it's time for refactoring. Or when you identify a malicious attachment (payload) of a intentionally malformated PDF file, that payload might be found resemble to a payload in another cyberattack.
 
-FSfSF solves these problems and empowers you to discvoer similarity relations within a large collections of files. You can do the following:
+FSFSF solves these problems and empowers you to discvoer similarity relations within a large collections of files. You can do the following:
 
 - Given a collection of files, reporting approximately all pairs of similar files,
 - Or more efficiently, reporting clusters of similar files,
@@ -16,7 +16,7 @@ FSfSF solves these problems and empowers you to discvoer similarity relations wi
 
 What's more, you can query for parts of files, without laborious effort to define and implement parsing of files into parts.
 
-FSfSF is built on two ideas: Disjunction of Conjunction of Minhash (DC-Minhash) and File Fragment Clone Search (FFCS).
+FSFSF is built on two ideas: Disjunction of Conjunction of Minhash (DC-Minhash) and File Fragment Clone Search (FFCS).
 
 DC-Minhash provides a scalable, sort-and-groupby style clustering or pre-clustering algorithm. Sort-and-groupby approach is O(n log n) to the size of collection, and this is better then many clustering algorithms which requires all-pair distance, of O(n log n).
 
