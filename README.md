@@ -1,4 +1,4 @@
-FSfSF - Fast Search for Similar Files
+# FSfSF - Fast Search for Similar Files
 
 FSfSF. High speed search for similar files and similar parts of files in a large-scale collection of files.
 
