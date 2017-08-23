@@ -1,4 +1,4 @@
-# FSFSF - _Fast_ _Search_ _for_ _Similar_ _Files_ in large collection of files
+# FSFSF - _Fast_ _Search_ _for_ _Similar_ _Files_ in a large collection of files
 
 FSFSF searches for similar files and similar parts of files in a large-scale collection of files.
 
