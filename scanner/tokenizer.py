@@ -16,12 +16,15 @@ unicode_space = re.compile(r'[\s]', flags=re.UNICODE)
 ascii_alnum = re.compile(br'[\w]+')
 ascii_space = re.compile(br'[\s]')
 
+TokensPos = namedtuple('TokensPos', ('tokens', 'pos'))
+
+
 def tokens_pos(regex):
-    TokensPos = namedtuple('TokensPos', ('tokens', 'pos'))
     def func(s):
         tokens, pos = [], []
+        append_tokens, append_pos = tokens.append, pos.append
         for match in regex.finditer(s):
-            tokens.append(match.group(0))
-            pos.append(match.pos)
+            append_tokens(match.group(0))
+            append_pos(match.pos)
         return TokensPos(tokens, pos)
     return func
