@@ -1,6 +1,6 @@
 # FSFSF - _Fast_ _Search_ _for_ _Similar_ _Files_ in a large collection of files
 
-** * Manuscript of paper is in preparation; I will upload the code after I finish the writing **
+**Manuscript of paper is in preparation; I will upload the code after I finish the writing**
 
 FSFSF searches for similar files and similar parts of files in a large-scale collection of files.
 
