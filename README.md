@@ -1,5 +1,7 @@
 # FSFSF - _Fast_ _Search_ _for_ _Similar_ _Files_ in a large collection of files
 
+* Manuscript of paper is in preparation; I will upload the code after I finish the writing *
+
 FSFSF searches for similar files and similar parts of files in a large-scale collection of files.
 
 Mining for [resemblance and containment of documents(Broder 1997)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.24.779&rep=rep1&type=pdf) has long been important since the days of AltaVista, even before Google was born; search engine giants are doing really well nowaday, but there is not a simple, succinct open source project to address this problem and provide a general purpose module.
